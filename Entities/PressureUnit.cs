@@ -30,6 +30,7 @@ namespace VtiUnitConversion.Entities
         public static PressureUnit OuterScale = new PressureUnit(16, "OuterScale", "Outer Scale");
         public static PressureUnit InnerScale = new PressureUnit(17, "InnerScale", "Inner Scale");
         public static PressureUnit LiqFill = new PressureUnit(18, "LiqFill", "Liq. Fill");
+        public static PressureUnit Micron = new PressureUnit(19, "Micron", "Micron (μ)");
 
         protected PressureUnit() { }
 
@@ -45,6 +46,7 @@ namespace VtiUnitConversion.Entities
                 PSIG,
                 PSIA,
                 Torr,
+                Micron,
                 Atm,
                 BarG,
                 BarAbs,
@@ -69,6 +71,7 @@ namespace VtiUnitConversion.Entities
             {
                 PSIA,
                 Torr,
+                Micron,
                 Atm,
                 BarAbs,
                 MbarAbs,
