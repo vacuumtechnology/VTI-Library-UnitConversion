@@ -65,8 +65,27 @@ namespace VtiUnitConversion.Entities
             };
         }
 
-        public static IEnumerable<PressureUnit> VGMSList()
+        public static IEnumerable<PressureUnit> VGMSList(bool includeNone = false)
         {
+            if (includeNone)
+            {
+                return new[]
+                {
+                    None,
+                    PSIA,
+                    Torr,
+                    Micron,
+                    Atm,
+                    BarAbs,
+                    MbarAbs,
+                    KgFCm2G,
+                    KgFCm2,
+                    kPaG,
+                    kPa,
+                    MPaG,
+                    MPa
+                };
+            }
             return new[]
             {
                 PSIA,
