@@ -72,12 +72,12 @@ namespace VtiUnitConversion.Entities
                 return new[]
                 {
                     None,
-                    PSIA,
                     Torr,
+                    MbarAbs,
                     Micron,
+                    PSIA,
                     Atm,
                     BarAbs,
-                    MbarAbs,
                     KgFCm2G,
                     KgFCm2,
                     kPaG,
@@ -88,12 +88,12 @@ namespace VtiUnitConversion.Entities
             }
             return new[]
             {
-                PSIA,
                 Torr,
+                MbarAbs,
                 Micron,
+                PSIA,
                 Atm,
                 BarAbs,
-                MbarAbs,
                 KgFCm2G,
                 KgFCm2,
                 kPaG,
