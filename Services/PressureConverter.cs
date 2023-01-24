@@ -55,7 +55,7 @@ namespace VtiUnitConversion.Services
             AddDoubleConversions(PressureUnit.PaG, v => v * 6.89475d * 1000, v => v * 1000 * 6.89475d);
             AddDoubleConversions(PressureUnit.kPaG, v => v * 6.89475d, v => v / 6.89475d);
             AddDoubleConversions(PressureUnit.MPaG, v => v * 6.89475d / 1000, v => v * 1000 / 6.89475d);
-            AddDoubleConversions(PressureUnit.Pa, v => (v + 14.69593d) * 6.89475d * 1000, v => (v * 1000 * 6.89475d) - 14.69593d);
+            AddDoubleConversions(PressureUnit.Pa, v => (v + 14.69593d) * 6.89475d * 1000, v => (v / 1000 / 6.89475d) - 14.69593d);
             AddDoubleConversions(PressureUnit.kPa, v => (v + 14.69593d) * 6.89475d, v => (v / 6.89475d) - 14.69593d);
             AddDoubleConversions(PressureUnit.MPa, v => (v + 14.69593d) * 6.89475d / 1000, v => (v * 1000 / 6.89475d) - 14.69593d);
             AddDoubleConversions(PressureUnit.KgFCm2, v => (v + 14.69593d) * 0.070307d, v => (v / 0.070307d) - 14.69593d);
