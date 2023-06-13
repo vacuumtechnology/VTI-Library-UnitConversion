@@ -31,8 +31,10 @@ namespace VtiUnitConversion.Entities
         public static PressureUnit InnerScale = new PressureUnit(17, "InnerScale", "Inner Scale");
         public static PressureUnit LiqFill = new PressureUnit(18, "LiqFill", "Liq. Fill");
         public static PressureUnit Micron = new PressureUnit(19, "Micron", "Micron (μ)");
-        public static PressureUnit PaG = new PressureUnit(20, "PaG", "Pa(g)");
-        public static PressureUnit Pa = new PressureUnit(21, "Pa", "Pa");
+        public static PressureUnit InHgG = new PressureUnit(20, "Inches Mercury (g)", "in. Hg(g)");
+        public static PressureUnit InHgAbs = new PressureUnit(21, "Inches Mercury (abs)", "in. Hg(abs)");
+        public static PressureUnit PaG = new PressureUnit(22, "PaG", "Pa(g)");
+        public static PressureUnit Pa = new PressureUnit(23, "Pa", "Pa");
 
         protected PressureUnit() { }
 
@@ -48,6 +50,8 @@ namespace VtiUnitConversion.Entities
                 PSIG,
                 PSIA,
                 Torr,
+                InHgG,
+                InHgAbs,
                 Micron,
                 Atm,
                 BarG,
@@ -82,6 +86,8 @@ namespace VtiUnitConversion.Entities
                     PSIA,
                     Atm,
                     BarAbs,
+                    InHgG,
+                    InHgAbs,
                     KgFCm2G,
                     KgFCm2,
                     kPaG,
@@ -98,6 +104,8 @@ namespace VtiUnitConversion.Entities
                 PSIA,
                 Atm,
                 BarAbs,
+                InHgG,
+                InHgAbs,
                 KgFCm2G,
                 KgFCm2,
                 PaG,
