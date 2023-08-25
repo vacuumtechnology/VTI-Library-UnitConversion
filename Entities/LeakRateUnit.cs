@@ -25,6 +25,7 @@ namespace VtiUnitConversion.Entities
         public static LeakRateUnit ULMin = new LeakRateUnit(11, "uLMin", "\u00b5l/min");
         public static LeakRateUnit ULHour = new LeakRateUnit(12, "uLHour", "\u00b5l/hr");
         public static LeakRateUnit SCFM = new LeakRateUnit(13, "SCFM", "SCFM");
+        public static LeakRateUnit SCIM = new LeakRateUnit(14, "SCIM", "SCIM");
 
         protected LeakRateUnit() { }
 
@@ -49,7 +50,8 @@ namespace VtiUnitConversion.Entities
                 ULSec,
                 ULMin,
                 ULHour,
-                SCFM
+                SCFM,
+                SCIM
             };
         }
 

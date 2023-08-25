@@ -50,6 +50,7 @@ namespace VtiUnitConversion.Services
             AddConversions(LeakRateUnit.MolSec, (v, w, t) => v / (82.0573m * (273.15m + (decimal)t)),
                                                 (v, w, t) => v * (82.0573m * (273.15m + (decimal)t)));
             AddConversions(LeakRateUnit.SCFM, (v, w, t) => v * 0.0021m, (v, w, t) => v / 0.0021m);
+            AddConversions(LeakRateUnit.SCIM, (v, w, t) => v * 0.0021m * 12.0m, (v, w, t) => v / 12.0m / 0.0021m);
 
             AddDoubleConversions(LeakRateUnit.AtmCCMin, (v, w, t) => v * 60, (v, w, t) => v / 60);
             AddDoubleConversions(LeakRateUnit.AtmCCHour, (v, w, t) => v * 3600, (v, w, t) => v / 3600);
@@ -69,6 +70,7 @@ namespace VtiUnitConversion.Services
             AddDoubleConversions(LeakRateUnit.MolSec, (v, w, t) => v / (82.0573d * (273.15d + (double)t)),
                                                 (v, w, t) => v * (82.0573d * (273.15d + (double)t)));
             AddDoubleConversions(LeakRateUnit.SCFM, (v, w, t) => v * 0.0021d, (v, w, t) => v / 0.0021d);
+            AddDoubleConversions(LeakRateUnit.SCIM, (v, w, t) => v * 0.0021d * 12.0d, (v, w, t) => v / 12.0d / 0.0021d);
         }
 
         protected static void AddConversions(LeakRateUnit convertToUnit,
