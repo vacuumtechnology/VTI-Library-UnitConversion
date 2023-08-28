@@ -26,13 +26,13 @@ namespace VtiUnitConversion.Services
             // Add conversion formulas to dictionary
             AddConversions(PressureUnit.PSIG, v => v, v => v); // root unit
             AddConversions(PressureUnit.PSIA, v => v + 14.69593m, v => v - 14.69593m);
-            AddConversions(PressureUnit.Torr, v => (v + 14.69593m) * 51.715m, v => (v / 51.715m) - 14.69593m);
-            AddConversions(PressureUnit.Micron, v => (v + 14.69593m) * 51.715m * 1000m, v => (v / 1000m / 51.715m) - 14.69593m);
-            AddConversions(PressureUnit.Atm, v => (v + 14.69593m) * 0.06804m, v => (v / 0.06804m) - 14.69593m);
+            AddConversions(PressureUnit.Torr, v => (v + 14.69593m) * 51.71493256m, v => (v / 51.71493256m) - 14.69593m);
+            AddConversions(PressureUnit.Micron, v => (v + 14.69593m) * 51.71493256m * 1000m, v => (v / 1000m / 51.71493256m) - 14.69593m);
+            AddConversions(PressureUnit.Atm, v => (v + 14.69593m) * 0.06804596379m, v => (v / 0.06804596379m) - 14.69593m);
             AddConversions(PressureUnit.BarG, v => v * 0.0689475m, v => v / 0.0689475m);
             AddConversions(PressureUnit.BarAbs, v => (v + 14.69593m) * 0.0689475m, v => (v / 0.0689475m) - 14.69593m);
-            AddConversions(PressureUnit.MbarG, v => v * 68.9475m, v => v / 68.9475m);
-            AddConversions(PressureUnit.MbarAbs, v => (v + 14.69593m) * 68.9475m, v => (v / 68.9475m) - 14.69593m);
+            AddConversions(PressureUnit.MbarG, v => v * 68.9475728m, v => v / 68.9475728m);
+            AddConversions(PressureUnit.MbarAbs, v => (v + 14.69593m) * 68.9475728m, v => (v / 68.9475728m) - 14.69593m);
             AddConversions(PressureUnit.KgFCm2G, v => v * 0.070307m, v => v / 0.070307m);
             AddConversions(PressureUnit.PaG, v => v * (6.89475m * 1000), v => v / (6.89475m * 1000));
             AddConversions(PressureUnit.kPaG, v => v * 6.89475m, v => v / 6.89475m);
@@ -46,13 +46,13 @@ namespace VtiUnitConversion.Services
 
             AddDoubleConversions(PressureUnit.PSIG, v => v, v => v); // root unit
             AddDoubleConversions(PressureUnit.PSIA, v => v + 14.69593d, v => v - 14.69593d);
-            AddDoubleConversions(PressureUnit.Torr, v => (v + 14.69593d) * 51.715d, v => (v / 51.715d) - 14.69593d);
-            AddDoubleConversions(PressureUnit.Micron, v => (v + 14.69593d) * 51.715d * 1000d, v => (v / 1000d / 51.715d) - 14.69593d);
-            AddDoubleConversions(PressureUnit.Atm, v => (v + 14.69593d) * 0.06804d, v => (v / 0.06804d) - 14.69593d);
+            AddDoubleConversions(PressureUnit.Torr, v => (v + 14.69593d) * 51.71493256d, v => (v / 51.71493256d) - 14.69593d);
+            AddDoubleConversions(PressureUnit.Micron, v => (v + 14.69593d) * 51.71493256d * 1000d, v => (v / 1000d / 51.71493256d) - 14.69593d);
+            AddDoubleConversions(PressureUnit.Atm, v => (v + 14.69593d) * 0.06804596379d, v => (v / 0.06804596379d) - 14.69593d);
             AddDoubleConversions(PressureUnit.BarG, v => v * 0.0689475d, v => v / 0.0689475d);
             AddDoubleConversions(PressureUnit.BarAbs, v => (v + 14.69593d) * 0.0689475d, v => (v / 0.0689475d) - 14.69593d);
-            AddDoubleConversions(PressureUnit.MbarG, v => v * 68.9475d, v => v / 68.9475d);
-            AddDoubleConversions(PressureUnit.MbarAbs, v => (v + 14.69593d) * 68.9475d, v => (v / 68.9475d) - 14.69593d);
+            AddDoubleConversions(PressureUnit.MbarG, v => v * 68.9475728d, v => v / 68.9475728d);
+            AddDoubleConversions(PressureUnit.MbarAbs, v => (v + 14.69593d) * 68.9475728d, v => (v / 68.9475728d) - 14.69593d);
             AddDoubleConversions(PressureUnit.KgFCm2G, v => v * 0.070307d, v => v / 0.070307d);
             AddDoubleConversions(PressureUnit.PaG, v => v * 6.89475d * 1000, v => v * 1000 * 6.89475d);
             AddDoubleConversions(PressureUnit.kPaG, v => v * 6.89475d, v => v / 6.89475d);
