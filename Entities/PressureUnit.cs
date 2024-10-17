@@ -35,6 +35,8 @@ namespace VtiUnitConversion.Entities
         public static PressureUnit InHgAbs = new PressureUnit(21, "Inches Mercury (abs)", "in. Hg(abs)");
         public static PressureUnit PaG = new PressureUnit(22, "PaG", "Pa(g)");
         public static PressureUnit Pa = new PressureUnit(23, "Pa", "Pa");
+        public static PressureUnit hPaG = new PressureUnit(24, "hPaG", "hPaG");
+        public static PressureUnit hPa = new PressureUnit(24, "hPa", "hPa");
 
         protected PressureUnit() { }
 
@@ -62,6 +64,8 @@ namespace VtiUnitConversion.Entities
                 KgFCm2,
                 PaG,
                 Pa,
+                hPaG,
+                hPa,
                 kPaG,
                 kPa,
                 MPaG,
@@ -90,6 +94,8 @@ namespace VtiUnitConversion.Entities
                     InHgAbs,
                     KgFCm2G,
                     KgFCm2,
+                    hPaG,
+                    hPa,
                     kPaG,
                     kPa,
                     MPaG,
@@ -108,6 +114,8 @@ namespace VtiUnitConversion.Entities
                 InHgAbs,
                 KgFCm2G,
                 KgFCm2,
+                hPaG,
+                hPa,
                 PaG,
                 Pa,
                 kPaG,

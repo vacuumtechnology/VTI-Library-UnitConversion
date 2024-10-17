@@ -37,6 +37,8 @@ namespace VtiUnitConversion.Services
             AddConversions(PressureUnit.PaG, v => v * (6.89475m * 1000), v => v / (6.89475m * 1000));
             AddConversions(PressureUnit.kPaG, v => v * 6.89475m, v => v / 6.89475m);
             AddConversions(PressureUnit.MPaG, v => v * 6.89475m / 1000, v => v * 1000 / 6.89475m);
+            AddConversions(PressureUnit.hPa, v => (v + 14.69593m) * 68.9475728m, v => (v / 68.9475728m) - 14.69593m);
+            AddConversions(PressureUnit.hPaG, v => v * 68.9475728m, v => v / 68.9475728m);
             AddConversions(PressureUnit.Pa, v => (v + 14.69593m) * 6.89475m * 1000, v => (v / 1000 / 6.89475m) - 14.69593m);
             AddConversions(PressureUnit.kPa, v => (v + 14.69593m) * 6.89475m, v => (v / 6.89475m) - 14.69593m);
             AddConversions(PressureUnit.MPa, v => (v + 14.69593m) * 6.89475m / 1000, v => (v * 1000 / 6.89475m) - 14.69593m);
@@ -57,6 +59,8 @@ namespace VtiUnitConversion.Services
             AddDoubleConversions(PressureUnit.PaG, v => v * 6.89475d * 1000, v => v * 1000 * 6.89475d);
             AddDoubleConversions(PressureUnit.kPaG, v => v * 6.89475d, v => v / 6.89475d);
             AddDoubleConversions(PressureUnit.MPaG, v => v * 6.89475d / 1000, v => v * 1000 / 6.89475d);
+            AddDoubleConversions(PressureUnit.hPa, v => (v + 14.69593d) * 68.9475728d, v => (v / 68.9475728d) - 14.69593d);
+            AddDoubleConversions(PressureUnit.hPaG, v => v * 68.9475728d, v => v / 68.9475728d);
             AddDoubleConversions(PressureUnit.Pa, v => (v + 14.69593d) * 6.89475d * 1000, v => (v / 1000 / 6.89475d) - 14.69593d);
             AddDoubleConversions(PressureUnit.kPa, v => (v + 14.69593d) * 6.89475d, v => (v / 6.89475d) - 14.69593d);
             AddDoubleConversions(PressureUnit.MPa, v => (v + 14.69593d) * 6.89475d / 1000, v => (v * 1000 / 6.89475d) - 14.69593d);
