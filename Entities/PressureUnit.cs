@@ -36,7 +36,8 @@ namespace VtiUnitConversion.Entities
         public static PressureUnit PaG = new PressureUnit(22, "PaG", "Pa(g)");
         public static PressureUnit Pa = new PressureUnit(23, "Pa", "Pa");
         public static PressureUnit hPaG = new PressureUnit(24, "hPaG", "hPaG");
-        public static PressureUnit hPa = new PressureUnit(24, "hPa", "hPa");
+        public static PressureUnit hPa = new PressureUnit(25, "hPa", "hPa");
+        public static PressureUnit mmHg = new PressureUnit(26, "Milimeters Mercury", "mmHg");
 
         protected PressureUnit() { }
 
@@ -54,6 +55,7 @@ namespace VtiUnitConversion.Entities
                 Torr,
                 InHgG,
                 InHgAbs,
+                mmHg,
                 Micron,
                 Atm,
                 BarG,
@@ -86,6 +88,7 @@ namespace VtiUnitConversion.Entities
                     None,
                     Torr,
                     MbarAbs,
+                    mmHg,
                     Micron,
                     PSIA,
                     Atm,
@@ -106,6 +109,7 @@ namespace VtiUnitConversion.Entities
             {
                 Torr,
                 MbarAbs,
+                mmHg,
                 Micron,
                 PSIA,
                 Atm,

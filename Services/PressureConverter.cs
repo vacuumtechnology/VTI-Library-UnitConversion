@@ -45,6 +45,7 @@ namespace VtiUnitConversion.Services
             AddConversions(PressureUnit.KgFCm2, v => (v + 14.69593m) * 0.070307m, v => (v / 0.070307m) - 14.69593m);
             AddConversions(PressureUnit.InHgG, v => v * 2.0360206576012m, v => v / 2.0360206576012m);
             AddConversions(PressureUnit.InHgAbs, v => (v + 14.69593m) * 2.0360206576012m, v => (v / 2.0360206576012m) - 14.69593m);
+            AddConversions(PressureUnit.mmHg, v => (v + 14.69593m) * 51.71493256m, v => (v / 51.71493256m) - 14.69593m);
 
             AddDoubleConversions(PressureUnit.PSIG, v => v, v => v); // root unit
             AddDoubleConversions(PressureUnit.PSIA, v => v + 14.69593d, v => v - 14.69593d);
@@ -67,6 +68,7 @@ namespace VtiUnitConversion.Services
             AddDoubleConversions(PressureUnit.KgFCm2, v => (v + 14.69593d) * 0.070307d, v => (v / 0.070307d) - 14.69593d);
             AddDoubleConversions(PressureUnit.InHgG, v => v * 2.0360206576012d, v => v / 2.0360206576012d);
             AddDoubleConversions(PressureUnit.InHgAbs, v => (v + 14.69593d) * 2.0360206576012d, v => (v / 2.0360206576012d) - 14.69593d);
+            AddDoubleConversions(PressureUnit.mmHg, v => (v + 14.69593d) * 51.71493256d, v => (v / 51.71493256d) - 14.69593d);
         }
 
         protected static void AddConversions(PressureUnit convertToUnit,
