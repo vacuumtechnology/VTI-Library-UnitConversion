@@ -108,11 +108,11 @@ namespace VtiUnitConversion.Services
                 // Convert to desired unit
                 newUnitValue = to.Equals(BaseUnit) ? baseUnitValue : DoubleConversionsTo[to](baseUnitValue);
             }
-            catch (KeyNotFoundException ex)
+            catch (KeyNotFoundException)
             {
                 newUnitValue = 0;
             }
-            catch (Exception ex)
+            catch
             {
                  // unified logger?
             }
@@ -142,11 +142,11 @@ namespace VtiUnitConversion.Services
                 // Convert to desired unit
                 newUnitValue = to.Equals(BaseUnit) ? baseUnitValue : ConversionsTo[to](baseUnitValue);
             }
-            catch (KeyNotFoundException ex)
+            catch (KeyNotFoundException)
             {
                 newUnitValue = 0;
             }
-            catch (Exception ex)
+            catch
             {
                 // unified logger?
             }
