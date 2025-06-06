@@ -38,7 +38,7 @@ namespace VtiUnitConversion.Entities
         public static PressureUnit hPaG = new PressureUnit(24, "hPaG", "hPaG");
         public static PressureUnit hPa = new PressureUnit(25, "hPa", "hPa");
         public static PressureUnit mmHg = new PressureUnit(26, "Milimeters Mercury", "mmHg");
-        public static PressureUnit inWC = new PressureUnit(27, "InWC", "in. water");
+        public static PressureUnit inWC = new PressureUnit(27, "InWC", "in. W.C.");
 
         protected PressureUnit() { }
 
