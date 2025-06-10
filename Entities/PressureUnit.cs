@@ -90,46 +90,50 @@ namespace VtiUnitConversion.Entities
                     None,
                     Torr,
                     MbarAbs,
-                    mmHg,
-                    Micron,
+                    BarAbs,
                     PSIA,
                     Atm,
-                    BarAbs,
-                    InHgG,
+                    Micron,
+                    mmHg,
                     InHgAbs,
-                    KgFCm2G,
-                    KgFCm2,
-                    hPaG,
                     hPa,
-                    kPaG,
                     kPa,
-                    MPaG,
                     MPa,
-                    inWC
+                    inWC,
+                    KgFCm2,
+                    MbarG,
+                    BarG,
+                    PSIG,
+                    InHgG,
+                    hPaG,
+                    kPaG,
+                    MPaG,
+                    KgFCm2G
                 };
             }
             return new[]
             {
                 Torr,
                 MbarAbs,
-                mmHg,
-                Micron,
+                BarAbs,
                 PSIA,
                 Atm,
-                BarAbs,
-                InHgG,
+                Micron,
+                mmHg,
                 InHgAbs,
-                KgFCm2G,
-                KgFCm2,
-                hPaG,
                 hPa,
-                PaG,
-                Pa,
-                kPaG,
                 kPa,
-                MPaG,
                 MPa,
-                inWC
+                inWC,
+                KgFCm2,
+                MbarG,
+                BarG,
+                PSIG,
+                InHgG,
+                hPaG,
+                kPaG,
+                MPaG,
+                KgFCm2G
             };
         }
 
@@ -146,6 +150,11 @@ namespace VtiUnitConversion.Entities
         public static PressureUnit FromName(string name)
         {
             return List().SingleOrDefault(lr => string.Equals(lr.Name, name, StringComparison.CurrentCultureIgnoreCase)) ?? None;
+        }
+
+        public static PressureUnit FromDisplayName(string name)
+        {
+            return List().SingleOrDefault(lr => string.Equals(lr.DisplayName, name, StringComparison.CurrentCultureIgnoreCase)) ?? None;
         }
 
         public static PressureUnit Parse(string v)
